@@ -51,7 +51,7 @@ static DecimalFormat df = new DecimalFormat("#.####");
 				double a=Double.valueOf(pane[0].getText());
 				double b=Double.valueOf(pane[1].getText());
 				int c=Integer.valueOf(pane[2].getText());	
-				JOptionPane.showMessageDialog(null,/*df.format*/(Deposit(a,b,c)), "���������", JOptionPane.PLAIN_MESSAGE);
+				JOptionPane.showMessageDialog(null,df.format(Deposit(a,b,c)), "���������", JOptionPane.PLAIN_MESSAGE);
 				pane[0].setText("");
 				pane[1].setText("");
 				pane[2].setText("");
